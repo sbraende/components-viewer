@@ -12,35 +12,58 @@
 
 <body>
     <main>
+        <!-- SIDEBAR SECTION -->
         <section class="sidebar">
             <h3 class="sidebar__title">Components:</h3>
             <ul class="sidebar__contents">
-                <li><button class="sidebar__compontent-button">Button</button></li>
-                <li><button class="sidebar__compontent-button">Accordion</button></li>
-                <li><button class="sidebar__compontent-button sidebar__compontent-button--active">Alert</button></li>
-                <li><button class="sidebar__compontent-button">Badge</button></li>
-                <li><button class="sidebar__compontent-button">Breadcrum</button></li>
-                <li><button class="sidebar__compontent-button">Checkbox</button></li>
-                <li><button class="sidebar__compontent-button">Dropdown</button></li>
-                <li><button class="sidebar__compontent-button">Loading</button></li>
-                <li><button class="sidebar__compontent-button">Progressbar</button></li>
+                <li><button class="sidebar__components-button">Button</button></li>
+                <li><button class="sidebar__components-button">Accordion</button></li>
+                <li><button class="sidebar__components-button sidebar__components-button--active">Alert</button></li>
+                <li><button class="sidebar__components-button">Badge</button></li>
+                <li><button class="sidebar__components-button">Breadcrum</button></li>
+                <li><button class="sidebar__components-button">Checkbox</button></li>
+                <li><button class="sidebar__components-button">Dropdown</button></li>
+                <li><button class="sidebar__components-button">Loading</button></li>
+                <li><button class="sidebar__components-button">Progressbar</button></li>
             </ul>
         </section>
+
+        <!-- COMPONENTS SECTION  -->
         <section class="components">
-            <div class="button">
-                <!-- BUTTON COMPONENT -->
+
+            <!-- BUTTON COMPONENT -->
+            <div class="component__button">
                 <h1 class="component__title">Button component:</h1>
                 <div class="component__state-container">
                     <h3 class="component__state-title">Default state:</h3>
                     <button class="component__state-item button">Push me</button>
                 </div>
                 <div class="component__state-container">
-                    <h3 class="components__state-title">Active state:</h3>
-                    <button class="component__state-item button-active">Push me</button>
+                    <h3 class="component__state-title">Active state:</h3>
+                    <button class="component__state-item button button--active">Push me</button>
+                </div>
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Disabled state:</h3>
+                    <button class="component__state-item button button--disabled" disabled>Push me</button>
+                </div>
+            </div>
+
+            <!-- SELECT COMPONENT -->
+            <div class="component__select">
+                <h1 class="component__title">Select component:</h1>
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Default state:</h3>
+                    <select name="select" id="select">
+                        <option value="select">Option 1</option>
+                        <option value="select">Option 2</option>
+                        <option value="select">Option 3</option>
+                        <option value="select">Option 4</option>
+                    </select>
                 </div>
             </div>
 
         </section>
+        <script src="./js/app.js"></script>
     </main>
 </body>
 
