@@ -1,0 +1,82 @@
+/* WEBINTERFACE STYLING */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: antiquewhite;
+  font-family: "Lato", sans-serif;
+  background-color: var(--color-background);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  gap: var(--spacing-large);
+
+  color: var(--color-text-light);
+}
+
+.sidebar {
+  height: 100vh;
+  padding: var(--spacing-large) var(--spacing-medium);
+  flex-basis: 10%;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-container-background);
+}
+
+.sidebar__title {
+  padding-bottom: var(--spacing-medium);
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+}
+
+.sidebar__contents {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
+
+.sidebar__compontent-button {
+  padding: var(--spacing-small) var(--spacing-medium);
+  transition: background-color 0.1s linear;
+}
+
+.sidebar__compontent-button:hover {
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: rgb(201, 207, 209);
+}
+
+.sidebar__compontent-button--active {
+  background-color: var(--color-primary);
+}
+
+.component {
+  padding: var(--spacing-large);
+  flex-grow: 1;
+  background-color: var(--color-container-background);
+}
+
+.component__title {
+  font-weight: 400;
+  padding-bottom: var(--spacing-medium);
+}
+
+.component__state-container {
+  padding-bottom: var(--spacing-large);
+}
+
+.component__state-title {
+  padding-bottom: var(--spacing-medium);
+}
+
+/* BUTTON COMPONENT */
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--boarder-radius-small);
+}
