@@ -41,17 +41,17 @@ main {
   gap: var(--spacing-small);
 }
 
-.sidebar__components-button {
+.sidebar__button {
   padding: var(--spacing-small) var(--spacing-medium);
   transition: background-color 0.1s linear;
 }
 
-.sidebar__components-button:hover {
+.sidebar__button:hover {
   padding: var(--spacing-small) var(--spacing-medium);
   background-color: rgb(201, 207, 209);
 }
 
-.sidebar__components-button--active {
+.sidebar__button--active {
   background-color: var(--color-primary);
 }
 
@@ -100,4 +100,9 @@ main {
 
 .button--disabled {
   background-color: rgb(137, 137, 137);
+}
+
+/* SELECT COMPONENT */
+.component__select {
+  /* display: none; */
 }
