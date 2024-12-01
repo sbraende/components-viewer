@@ -22,7 +22,6 @@ main {
 .sidebar {
   height: 100vh;
   padding: var(--spacing-large) var(--spacing-medium);
-  flex-basis: 10%;
 
   display: flex;
   flex-direction: column;
@@ -77,6 +76,10 @@ main {
 }
 
 /* BUTTON COMPONENT */
+.button {
+  display: none;
+}
+
 /* .button {
   padding: var(--spacing-small) var(--spacing-medium);
   border: none;
@@ -99,5 +102,5 @@ main {
 
 /* SELECT COMPONENT */
 .select {
-  /* display: none; */
+  display: none;
 }
