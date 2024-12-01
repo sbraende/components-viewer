@@ -2,9 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+html,
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 
   background-color: antiquewhite;
   font-family: "Lato", sans-serif;
@@ -12,6 +13,7 @@ body {
 }
 
 main {
+  min-height: 100vh;
   width: 100%;
   display: flex;
   gap: var(--spacing-large);
@@ -20,11 +22,11 @@ main {
 }
 
 .sidebar {
-  height: 100vh;
   padding: var(--spacing-large) var(--spacing-medium);
 
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   background-color: var(--color-container-background);
 }
 
@@ -35,6 +37,7 @@ main {
 }
 
 .sidebar__buttonContainer {
+  padding-bottom: var(--spacing-large);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-small);
@@ -50,6 +53,15 @@ main {
 
 .sidebar__button--active {
   background-color: var(--color-primary);
+}
+
+.sidebar__addativeLabel {
+  padding-bottom: var(--spacing-medium);
+}
+
+.sidebar__addativeCheckbox {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .components {
@@ -76,21 +88,17 @@ main {
 }
 
 /* BUTTON COMPONENT */
-.button {
+.button-component {
   display: none;
 }
 
-/* .button {
+.button {
   padding: var(--spacing-small) var(--spacing-medium);
   border: none;
   border-radius: var(--boarder-radius-small);
   cursor: pointer;
   transition: background-color 0.1s linear;
-} */
-
-/* .button:hover {
-  background-color: rgb(201, 207, 209);
-} */
+}
 
 .button--active {
   background-color: var(--color-primary);
@@ -101,6 +109,67 @@ main {
 }
 
 /* SELECT COMPONENT */
-.select {
+.select-component {
   display: none;
+}
+
+.select {
+  position: relative;
+}
+
+/* PROGRESSBAR */
+.progressbar-component {
+  display: none;
+}
+
+/* CARD COMPONENT */
+.card-component {
+  display: none;
+}
+
+.card-componentRowLayout {
+  display: flex;
+  gap: var(--spacing-large);
+}
+
+.card {
+  max-width: 200px;
+  min-height: 500px;
+  border-radius: var(--boarder-radius-medium);
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #343437;
+}
+
+.card__image {
+  width: 100%;
+  border-top-left-radius: var(--boarder-radius-medium);
+  border-top-left-radius: var(--boarder-radius-medium);
+
+  flex-basis: 50%;
+}
+
+.card__textContent {
+  flex-grow: 1;
+  padding: var(--spacing-medium);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
+
+.card__link {
+  color: var(--color-text-light);
+}
+
+.card--hover img {
+  opacity: 0.75;
+}
+
+.card__textContent--hover > h3,
+.card__textContent--hover > p,
+.card__textContent--hover > a {
+  opacity: 0.5;
 }

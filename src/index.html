@@ -16,34 +16,50 @@
         <section class="sidebar">
             <h3 class="sidebar__title">Components:</h3>
             <ul class="sidebar__buttonContainer"></ul>
+            <label class="sidebar__addativeLabel" for="addativeRendering">Addative render of components:</label>
+            <input class="sidebar__addativeCheckbox" type="checkbox" name="addativeRendering" id="">
         </section>
 
         <!-- COMPONENTS SECTION  -->
         <section class="components">
 
             <!-- BUTTON COMPONENT -->
-            <div class="button">
+            <div class="button-component">
                 <h1 class="component__title">Button component:</h1>
+                <!-- BUTTON DEFAULT -->
                 <div class="component__state-container">
                     <h3 class="component__state-title">Default state:</h3>
-                    <button class="button--default">Push me</button>
+                    <button class="button button--default">Push me</button>
                 </div>
+                <!-- BUTTON ACTIVE -->
                 <div class="component__state-container">
                     <h3 class="component__state-title">Active state:</h3>
-                    <button class="button--active">Push me</button>
+                    <button class="button button--active">Push me</button>
                 </div>
+                <!-- BUTTON DISABLED -->
                 <div class="component__state-container">
                     <h3 class="component__state-title">Disabled state:</h3>
-                    <button class="button--disabled" disabled>Push me</button>
+                    <button class="button button--disabled" disabled>Push me</button>
                 </div>
             </div>
 
             <!-- SELECT COMPONENT -->
-            <div class="select">
+            <div class="select-component">
                 <h1 class="component__title">Select component:</h1>
+                <!-- SELECT DEFAULT -->
                 <div class="component__state-container">
                     <h3 class="component__state-title">Default state:</h3>
-                    <select name="select" id="select">
+                    <select class="select" name="select" id="select">
+                        <option value="select">Option 1</option>
+                        <option value="select">Option 2</option>
+                        <option value="select">Option 3</option>
+                        <option value="select">Option 4</option>
+                    </select>
+                </div>
+                <!-- SELECT DISABLED -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Disabled state:</h3>
+                    <select class="select" name="select" id="disabled-select" disabled>
                         <option value="select">Option 1</option>
                         <option value="select">Option 2</option>
                         <option value="select">Option 3</option>
@@ -52,14 +68,68 @@
                 </div>
             </div>
 
-            <!-- Progressbar -->
-            <div class="progressbar">
+            <!-- PROGRESSBAR COMPONENT -->
+            <div class="progressbar-component">
                 <h1 class="component__title">Progressbar component:</h1>
+                <!-- PROGRESS LOADING  -->
                 <div class="component__state-container">
-                    <h3 class="component__state-title">Default state:</h3>
-                    <progress class="progressbar">
+                    <h3 class="component__state-title">Loading state:</h3>
+                    <progress class="progressbar"></progress>
+                </div>
+                <!-- PROGRESS 0%  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">0% state:</h3>
+                    <progress class="progressbar" value="0"></progress>
+                </div>
+                <!-- PROGRESS 100%  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">100% state:</h3>
+                    <progress class="progressbar" value="100"></progress>
+                </div>
+            </div>
 
-                    </progress>
+            <!-- CARD COMPONENT -->
+            <div class="card-component">
+                <h1 class="component__title">Card component:</h1>
+                <div class="card-componentRowLayout">
+                    <!-- CARD DEFAULT  -->
+                    <div class="component__state-container">
+                        <h3 class="component__state-title">Default state:</h3>
+                        <div class="card">
+                            <img src="./assets/images/pexels-florian-eckerle-269098632-26691734.jpg" class="card__image"
+                                alt="dark abstact image"></img>
+                            <div class="card__textContent">
+                                <h3 class="card__title">Dark abstarct image</h3>
+                                <p class="card__description">
+                                    A vibrant image of dark pink and dark blue jellyfish glowing underwater, their
+                                    tentacles
+                                    gracefully flowing.
+                                </p>
+                                <a class="card__link"
+                                    href="https://www.pexels.com/nb-no/bilde/svomme-under-vann-manet-dyrefotografering-26691734/">Image
+                                    by Florian Eckerle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD HOVER  -->
+                    <div class="component__state-container">
+                        <h3 class="component__state-title">Hover state:</h3>
+                        <div class="card card--hover">
+                            <img src="./assets/images/pexels-florian-eckerle-269098632-26691734.jpg" class="card__image"
+                                alt="dark abstact image"></img>
+                            <div class="card__textContent card__textContent--hover">
+                                <h3 class="card__title">Dark abstarct image</h3>
+                                <p class="card__description">
+                                    A vibrant image of dark pink and dark blue jellyfish glowing underwater, their
+                                    tentacles
+                                    gracefully flowing.
+                                </p>
+                                <a class="card__link"
+                                    href="https://www.pexels.com/nb-no/bilde/svomme-under-vann-manet-dyrefotografering-26691734/">Image
+                                    by Florian Eckerle</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
