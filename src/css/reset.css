@@ -10,6 +10,4 @@ li {
 
 button {
   cursor: pointer;
-  border: none;
-  border-radius: var(--boarder-radius-small);
 }

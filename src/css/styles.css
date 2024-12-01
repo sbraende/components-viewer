@@ -35,7 +35,7 @@ main {
   font-weight: 500;
 }
 
-.sidebar__contents {
+.sidebar__buttonContainer {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-small);
@@ -43,12 +43,10 @@ main {
 
 .sidebar__button {
   padding: var(--spacing-small) var(--spacing-medium);
-  transition: background-color 0.1s linear;
-}
-
-.sidebar__button:hover {
-  padding: var(--spacing-small) var(--spacing-medium);
-  background-color: rgb(201, 207, 209);
+  border: none;
+  border-radius: var(--boarder-radius-small);
+  text-transform: capitalize;
+  transition: background-color 0.05s linear;
 }
 
 .sidebar__button--active {
@@ -79,20 +77,17 @@ main {
 }
 
 /* BUTTON COMPONENT */
-.button {
-  cursor: pointer;
+/* .button {
+  padding: var(--spacing-small) var(--spacing-medium);
   border: none;
   border-radius: var(--boarder-radius-small);
-}
-
-.button {
-  padding: var(--spacing-small) var(--spacing-medium);
+  cursor: pointer;
   transition: background-color 0.1s linear;
-}
+} */
 
-.button:hover {
+/* .button:hover {
   background-color: rgb(201, 207, 209);
-}
+} */
 
 .button--active {
   background-color: var(--color-primary);
@@ -103,6 +98,6 @@ main {
 }
 
 /* SELECT COMPONENT */
-.component__select {
+.select {
   /* display: none; */
 }

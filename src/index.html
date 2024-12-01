@@ -15,9 +15,9 @@
         <!-- SIDEBAR SECTION -->
         <section class="sidebar">
             <h3 class="sidebar__title">Components:</h3>
-            <ul class="sidebar__contents">
-                <li><button class="sidebar__button" value="button">Button</button></li>
-                <li><button class="sidebar__button sidebar__button--active" value="select">select</button></li>
+            <ul class="sidebar__buttonContainer">
+                <!-- <li><button class="sidebar__button" value="button">Button</button></li> -->
+                <!-- <li><button class="sidebar__button sidebar__button--active" value="select">select</button></li> -->
                 <!-- <li><button class="sidebar__button" value="accordion">Accordion</button></li>
                 <li><button class="sidebar__button" value="alert">Alert</button></li> -->
                 <!-- <li><button class="sidebar__button">Badge</button></li>
@@ -33,27 +33,27 @@
         <section class="components">
 
             <!-- BUTTON COMPONENT -->
-            <div class="component__button">
-                <h1 class="component__title">Button component:</h1>
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Default state:</h3>
-                    <button class="component__state-item button">Push me</button>
+            <div class="button">
+                <h1 class="button__title">Button component:</h1>
+                <div class="button__state-container">
+                    <h3 class="button__state-title">Default state:</h3>
+                    <button class="button__state-item button--default">Push me</button>
                 </div>
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Active state:</h3>
-                    <button class="component__state-item button button--active">Push me</button>
+                <div class="button__state-container">
+                    <h3 class="button__state-title">Active state:</h3>
+                    <button class="button__state-item button--active">Push me</button>
                 </div>
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Disabled state:</h3>
-                    <button class="component__state-item button button--disabled" disabled>Push me</button>
+                <div class="button__state-container">
+                    <h3 class="button__state-title">Disabled state:</h3>
+                    <button class="button__state-item button--disabled" disabled>Push me</button>
                 </div>
             </div>
 
             <!-- SELECT COMPONENT -->
-            <div class="component__select">
-                <h1 class="component__title">Select component:</h1>
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Default state:</h3>
+            <div class="select">
+                <h1 class="select__title">Select component:</h1>
+                <div class="select__state-container">
+                    <h3 class="select__state-title">Default state:</h3>
                     <select name="select" id="select">
                         <option value="select">Option 1</option>
                         <option value="select">Option 2</option>
