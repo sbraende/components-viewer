@@ -7,9 +7,6 @@ const sidebarAddativeCheckbox = document.querySelector(
   ".sidebar__addativeCheckbox"
 );
 
-// GLOBAL VARIABLES
-const addativeRendering = true;
-
 // RENDER WEBSITE ELEMENTS
 document.addEventListener("DOMContentLoaded", () => renderElements());
 
@@ -32,6 +29,7 @@ const renderElements = () => {
 
     // Eventlistener for sidebarButton.
     sidebarButton.addEventListener("click", () => {
+      // Render behaviour based on additiveCheckbox
       if (sidebarAddativeCheckbox.checked) {
         // Toggle active class on button.
         sidebarButton.classList.toggle("sidebar__button--active");
