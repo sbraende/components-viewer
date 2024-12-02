@@ -59,7 +59,7 @@
                 <!-- SELECT DISABLED -->
                 <div class="component__state-container">
                     <h3 class="component__state-title">Disabled state:</h3>
-                    <select class="select" name="select" id="disabled-select" disabled>
+                    <select class="select select--disabled" name="select" id="disabled-select" disabled>
                         <option value="select">Option 1</option>
                         <option value="select">Option 2</option>
                         <option value="select">Option 3</option>
@@ -128,6 +128,51 @@
                                     href="https://www.pexels.com/nb-no/bilde/svomme-under-vann-manet-dyrefotografering-26691734/">Image
                                     by Florian Eckerle</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACCORDION COMPONENT -->
+            <div class="accordion-component">
+                <h1 class="component__title">Accordion component:</h1>
+                <!-- ACCORDION DEFAULT -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Default state:</h3>
+                    <div class="accordion">
+                        <button class="accordion__button">
+                            <h3 class="accordion__title">Return info</h3>
+                            <img class="accordion__arrow" src="./assets/icons/nav-arrow-down.svg" alt="arrow down">
+                        </button>
+                        <div class="accordion__sect1">
+                            <p>
+                                <b>Lorem ipsum </b>, dolor sit amet consectetur adipisicing elit. Est expedita quasi
+                                quibusdam
+                                molestiae nulla voluptatibus excepturi voluptates repellendus eius quaerat laboriosam,
+                                nesciunt laborum eos reprehenderit reiciendis beatae ab labore eligendi animi magnam
+                                quisquam architecto. Quod, quis at consequatur ratione possimus corporis. Dolor placeat
+                                quidem illum quos quo expedita et error?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDION ACTIVE -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Active state:</h3>
+                    <div class="accordion">
+                        <button class="accordion__button accordion__button--active">
+                            <h3 class="accordion__title">Return info</h3>
+                            <img class="accordion__arrow accordion__arrow--active"
+                                src="./assets/icons/nav-arrow-down.svg" alt="arrow down">
+                        </button>
+                        <div class="accordion__sect1 accordion__sect1--active">
+                            <p>
+                                <b>Lorem ipsum</b>,
+                                dolor sit amet consectetur adipisicing elit. Est expedita quasi
+                                quibusdamolestiae nulla voluptatibus excepturi voluptates repellendus eius quaerat
+                                laboriosam,
+                                nesciunt laborum eoso expedita et error?
+                            </p>
                         </div>
                     </div>
                 </div>
