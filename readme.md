@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project is part of an assignment from Høyskolen Kristiania, centered on designing an interface to showcase <b>eight distinct UI components</b> and their various states..
+This project is part of an assignment from Høyskolen Kristiania, centered on designing an interface to showcase <b>eight distinct UI components</b> and their various states.
 
 Published website: [https://sbraende-components.netlify.app/](https://sbraende-components.netlify.app/)
 
