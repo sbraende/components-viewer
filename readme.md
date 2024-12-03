@@ -6,26 +6,26 @@ This project is part of Høyskolen Kristiania's assignment focused on creating a
 
 The webpage is responsive and works seamlessly on desktop, tablet, and mobile devices.
 
-## Features
-
-- Vanilla HTML, CSS, and JavaScript
-- Component States: Displays each component in multiple states, including default, hover, active, and disabled.
-- Toggle View: Switch between additive and solo rendering modes for flexibility.
-- Minimal and Modern Design.
-
 ## Preview
 
 ![Components Viewer Preview](./src/assets/images/screenshot.png)
 
+## Features
+
+- Vanilla HTML, CSS, and JavaScript.
+- Component States: Displays each component in multiple states, including default, hover, active, and disabled.
+- Toggle View: Switch between additive and solo rendering modes for flexibility.
+- Minimal and Modern Design.
+
 ## References:
 
-Components inspiration:
-<br>
-https://spor.vy.no/components/
-https://m3.material.io/components
+- Components inspiration:
+  <br> - [Vy's Design System](https://spor.vy.no/components/) - [Material Design Components](https://m3.material.io/components)
 
-Design inspiration from Sascha Eggenberger:
-https://dribbble.com/shots/10783694-Gin-FutureUI-Form-Display-Darkmode
+- Design inspiration:
+  <br>
+  [Sascha Eggenberger on Dribbble](https://dribbble.com/shots/10783694-Gin-FutureUI-Form-Display-Darkmode)
 
-Icons from:
-https://iconoir.com/
+- Icons:
+  <br>
+  [iconoir](https://iconoir.com/)
