@@ -1,3 +1,13 @@
+Components inspiration:
+https://spor.vy.no/components/
+https://m3.material.io/components
+
 Custom Select: 
 https://www.w3schools.com/howto/howto_custom_select.asp
 https://blog.logrocket.com/creating-custom-select-dropdown-css/
+
+Design inspiration from Sascha Eggenberger:
+https://dribbble.com/shots/10783694-Gin-FutureUI-Form-Display-Darkmode
+
+Icons from:
+https://iconoir.com/

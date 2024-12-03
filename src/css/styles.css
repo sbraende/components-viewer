@@ -1,6 +1,6 @@
 /* INTERFACE STYLING */
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 html,
 body {
@@ -256,6 +256,35 @@ main {
 
 .search__input--disabled::placeholder {
   color: var(--color-text-medium);
+}
+
+/* ALERT COMPONENT */
+.alert {
+  min-width: 100px;
+  max-width: 600px;
+  padding: var(--spacing-small);
+  display: flex;
+  gap: var(--spacing-small);
+  align-items: center;
+  border: 1px solid var(--color-text-medium);
+  border-radius: var(--boarder-radius-small);
+  font-size: inherit;
+}
+
+.alert--success {
+  background-color: rgb(0, 68, 0);
+}
+
+.alert--info {
+  background-color: #00448d;
+}
+
+.alert--warning {
+  background-color: rgb(164, 139, 10);
+}
+
+.alert--error {
+  background-color: rgb(136, 15, 15);
 }
 
 /* RESPONSIVE DESIGN */
