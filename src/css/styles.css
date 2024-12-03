@@ -1,4 +1,4 @@
-/* WEBINTERFACE STYLING */
+/* INTERFACE STYLING */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
@@ -85,16 +85,13 @@ main {
 }
 
 /* BUTTON COMPONENT */
-.button-component {
-  display: none;
-}
-
 .button {
   padding: var(--spacing-small) var(--spacing-medium);
-  border: none;
+  padding: var(--spacing-small);
+  border: 1px solid var(--color-text-medium);
   border-radius: var(--boarder-radius-small);
   cursor: pointer;
-  transition: background-color 0.1s linear;
+  background-color: var(--color-text-light);
 }
 
 .button--active {
@@ -102,17 +99,14 @@ main {
 }
 
 .button--disabled {
-  background-color: rgb(137, 137, 137);
+  background-color: var(--color-accorrdion-background);
+  color: var(--color-text-medium);
 }
 
 /* SELECT COMPONENT */
-.select-component {
-  display: none;
-}
-
 .select {
-  min-width: 200px;
-  max-width: 30px;
+  min-width: 100px;
+  max-width: 300px;
   padding: var(--spacing-small);
   border: 1px solid var(--color-text-medium);
   border-radius: var(--boarder-radius-small);
@@ -126,16 +120,9 @@ main {
 }
 
 /* PROGRESSBAR */
-.progressbar-component {
-  display: none;
-}
 
 /* CARD COMPONENT */
-.card-component {
-  display: none;
-}
-
-.card-componentRowLayout {
+.card-componentLayout {
   display: flex;
   gap: var(--spacing-large);
 }
@@ -223,4 +210,61 @@ main {
 
 .accordion__sect1--active {
   display: block;
+}
+
+/* CHECKBOX COMPONENT */
+.checkbox__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
+
+.checkbox__container {
+  display: flex;
+  gap: var(--spacing-small);
+  align-items: center;
+}
+
+.checkbox__item {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.checkbox__label--disabled {
+  color: var(--color-text-medium);
+}
+
+/* SEARCH COMPONENT */
+.search__input {
+  min-width: 100px;
+  max-width: 300px;
+  padding: var(--spacing-small);
+  border: 1px solid var(--color-text-medium);
+  border-radius: var(--boarder-radius-small);
+  font-size: inherit;
+  background-color: var(--color-text-light);
+}
+
+.search__input--focused {
+  border: 1px solid;
+  outline: 2px solid #007aff;
+}
+
+.search__input--disabled {
+  background-color: var(--color-accorrdion-background);
+}
+
+.search__input--disabled::placeholder {
+  color: var(--color-text-medium);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 586px) {
+  main {
+    gap: var(--spacing-small);
+  }
+
+  .card-componentLayout {
+    flex-direction: column;
+  }
 }

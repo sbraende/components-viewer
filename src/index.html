@@ -91,7 +91,7 @@
             <!-- CARD COMPONENT -->
             <div class="card-component">
                 <h1 class="component__title">Card component:</h1>
-                <div class="card-componentRowLayout">
+                <div class="card-componentLayout">
                     <!-- CARD DEFAULT  -->
                     <div class="component__state-container">
                         <h3 class="component__state-title">Default state:</h3>
@@ -177,6 +177,84 @@
                     </div>
                 </div>
             </div>
+
+            <!-- CHECKBOX COMPONENT -->
+            <div class="checkbox-component">
+                <h1 class="component__title">Checkbox component:</h1>
+                <!-- CHECKBOX DEFAULT:  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Default state:</h3>
+                    <div class="checkbox">
+                        <form class="checkbox__form">
+                            <div class="checkbox__container">
+                                <input class="checkbox__item" type="checkbox" name="checkbox-one">
+                                <label class="checkbox__label" for="checkbox-one">Checkbox One</label>
+                            </div>
+                            <div class="checkbox__container">
+                                <input class="checkbox__item" type="checkbox" name="checkbox-two">
+                                <label class="checkbox__label" for="checkbox-two">Checkbox Two</label>
+                            </div>
+                            <div class="checkbox__container">
+                                <input class="checkbox__item" type="checkbox" name="checkbox-three">
+                                <label class="checkbox__label" for="checkbox-three">Checkbox Three</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- CHECKBOX DISABLED:  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Disabled state:</h3>
+                    <div class="checkbox">
+                        <form class="checkbox__form">
+                            <div class="checkbox__container">
+                                <input class="checkbox__item checkbox__item--disabled" type="checkbox"
+                                    name="checkbox-one" disabled>
+                                <label class="checkbox__label checkbox__label--disabled" for="checkbox-one">Checkbox
+                                    One</label>
+                            </div>
+                            <div class="checkbox__container">
+                                <input class="checkbox__item checkbox__item--disabled" type="checkbox"
+                                    name="checkbox-two" disabled>
+                                <label class="checkbox__label checkbox__label--disabled" for="checkbox-two">Checkbox
+                                    Two</label>
+                            </div>
+                            <div class="checkbox__container">
+                                <input class="checkbox__item checkbox__item--disabled" type="checkbox"
+                                    name="checkbox-three" disabled>
+                                <label class="checkbox__label checkbox__label--disabled" for="checkbox-three">Checkbox
+                                    Three</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SEARCH COMPONENT -->
+            <div class="search-component">
+                <h1 class="component__title">Search component:</h1>
+                <!-- SEARCH DEFAULT: -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Default state:</h3>
+                    <div class="search">
+                        <input class="search__input" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <!-- SEARCH FOCUSED: -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Focused state:</h3>
+                    <div class="search search--focused">
+                        <input class="search__input search__input--focused" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <!-- SEARCH DEFAULT:  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Disabled state:</h3>
+                    <div class="search search--disabled">
+                        <input class="search__input search__input--disabled" type="search" placeholder="Search..."
+                            disabled>
+                    </div>
+                </div>
 
         </section>
         <script src="./js/app.js"></script>
