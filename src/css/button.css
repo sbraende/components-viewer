@@ -1,0 +1,17 @@
+.button {
+  padding: var(--spacing-small) var(--spacing-medium);
+  padding: var(--spacing-small);
+  border: 1px solid var(--color-text-medium);
+  border-radius: var(--boarder-radius-small);
+  cursor: pointer;
+  background-color: var(--color-text-light);
+}
+
+.button--active {
+  background-color: var(--color-primary);
+}
+
+.button--disabled {
+  background-color: var(--color-accorrdion-background);
+  color: var(--color-text-medium);
+}

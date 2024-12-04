@@ -1,0 +1,28 @@
+/* ALERT COMPONENT */
+.alert {
+  min-width: 100px;
+  max-width: 600px;
+  padding: var(--spacing-small);
+  display: flex;
+  gap: var(--spacing-small);
+  align-items: center;
+  border: 1px solid var(--color-text-medium);
+  border-radius: var(--boarder-radius-small);
+  font-size: inherit;
+}
+
+.alert--success {
+  background-color: rgb(0, 68, 0);
+}
+
+.alert--info {
+  background-color: #00448d;
+}
+
+.alert--warning {
+  background-color: rgb(164, 139, 10);
+}
+
+.alert--error {
+  background-color: rgb(136, 15, 15);
+}
