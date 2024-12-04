@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Design System</title>
+
+    <!-- COMPONENT STYLING -->
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/alert.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/checkbox.css">
+    <link rel="stylesheet" href="./css/progressbar.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/select.css">
 </head>
 
 <body>
@@ -22,6 +32,89 @@
 
         <!-- COMPONENTS SECTION  -->
         <section class="components">
+
+            <!-- ACCORDION COMPONENT -->
+            <div class="accordion-component">
+                <h1 class="component__title">Accordion component:</h1>
+                <!-- ACCORDION DEFAULT -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Default state:</h3>
+                    <div class="accordion">
+                        <button class="accordion__button">
+                            <h3 class="accordion__title">Return info</h3>
+                            <img class="accordion__arrow" src="./assets/icons/nav-arrow-down.svg" alt="arrow down">
+                        </button>
+                        <div class="accordion__sect1">
+                            <p>
+                                <b>Lorem ipsum </b>, dolor sit amet consectetur adipisicing elit. Est expedita quasi
+                                quibusdam
+                                molestiae nulla voluptatibus excepturi voluptates repellendus eius quaerat laboriosam,
+                                nesciunt laborum eos reprehenderit reiciendis beatae ab labore eligendi animi magnam
+                                quisquam architecto. Quod, quis at consequatur ratione possimus corporis. Dolor placeat
+                                quidem illum quos quo expedita et error?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ACCORDION ACTIVE -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Active state:</h3>
+                    <div class="accordion">
+                        <button class="accordion__button accordion__button--active">
+                            <h3 class="accordion__title">Return info</h3>
+                            <img class="accordion__arrow accordion__arrow--active"
+                                src="./assets/icons/nav-arrow-down.svg" alt="arrow down">
+                        </button>
+                        <div class="accordion__sect1 accordion__sect1--active">
+                            <p>
+                                <b>Lorem ipsum</b>,
+                                dolor sit amet consectetur adipisicing elit. Est expedita quasi
+                                quibusdamolestiae nulla voluptatibus excepturi voluptates repellendus eius quaerat
+                                laboriosam,
+                                nesciunt laborum eoso expedita et error?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ALERT COMPONENT -->
+            <div class="alert-component">
+                <h1 class="component__title">Alert component:</h1>
+                <!-- ALERT SUCCESS: -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Success state:</h3>
+                    <div class="alert alert--success">
+                        <img src="./assets/icons/check-circle.svg" alt="Success icon.">
+                        <p>This is a success message, and it confirms you did something good!</p>
+                    </div>
+                </div>
+                <!-- ALERT INFO: -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Info state:</h3>
+                    <div class="alert alert--info">
+                        <img src="./assets/icons/info-circle.svg" alt="Info icon.">
+                        <p>This is a information message, it gives you a message in neutral way.</p>
+                    </div>
+                </div>
+                <!-- ALERT WARNING: -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Warning state:</h3>
+                    <div class="alert alert--warning">
+                        <img src="./assets/icons/warning-triangle.svg" alt="Warning icon.">
+                        <p>This is a warning message. It will get your attention to give you important information.</p>
+                    </div>
+                </div>
+                <!-- ALERT ERROR: -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Error state:</h3>
+                    <div class="alert alert--error">
+                        <img src="./assets/icons/xmark-circle.svg" alt="Error icon.">
+                        <p>This is a error message. Something critical is happening or not working.</p>
+                    </div>
+                </div>
+            </div>
 
             <!-- BUTTON COMPONENT -->
             <div class="button-component">
@@ -40,51 +133,6 @@
                 <div class="component__state-container">
                     <h3 class="component__state-title">Disabled state:</h3>
                     <button class="button button--disabled" disabled>Push me</button>
-                </div>
-            </div>
-
-            <!-- SELECT COMPONENT -->
-            <div class="select-component">
-                <h1 class="component__title">Select component:</h1>
-                <!-- SELECT DEFAULT -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Default state:</h3>
-                    <select class="select" name="select" id="select">
-                        <option value="select">Option 1</option>
-                        <option value="select">Option 2</option>
-                        <option value="select">Option 3</option>
-                        <option value="select">Option 4</option>
-                    </select>
-                </div>
-                <!-- SELECT DISABLED -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Disabled state:</h3>
-                    <select class="select select--disabled" name="select" id="disabled-select" disabled>
-                        <option value="select">Option 1</option>
-                        <option value="select">Option 2</option>
-                        <option value="select">Option 3</option>
-                        <option value="select">Option 4</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- PROGRESSBAR COMPONENT -->
-            <div class="progressbar-component">
-                <h1 class="component__title">Progressbar component:</h1>
-                <!-- PROGRESS LOADING  -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Loading state:</h3>
-                    <progress class="progressbar"></progress>
-                </div>
-                <!-- PROGRESS 0%  -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">0% state:</h3>
-                    <progress class="progressbar" value="0"></progress>
-                </div>
-                <!-- PROGRESS 100%  -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">100% state:</h3>
-                    <progress class="progressbar" value="100"></progress>
                 </div>
             </div>
 
@@ -133,50 +181,6 @@
                 </div>
             </div>
 
-            <!-- ACCORDION COMPONENT -->
-            <div class="accordion-component">
-                <h1 class="component__title">Accordion component:</h1>
-                <!-- ACCORDION DEFAULT -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Default state:</h3>
-                    <div class="accordion">
-                        <button class="accordion__button">
-                            <h3 class="accordion__title">Return info</h3>
-                            <img class="accordion__arrow" src="./assets/icons/nav-arrow-down.svg" alt="arrow down">
-                        </button>
-                        <div class="accordion__sect1">
-                            <p>
-                                <b>Lorem ipsum </b>, dolor sit amet consectetur adipisicing elit. Est expedita quasi
-                                quibusdam
-                                molestiae nulla voluptatibus excepturi voluptates repellendus eius quaerat laboriosam,
-                                nesciunt laborum eos reprehenderit reiciendis beatae ab labore eligendi animi magnam
-                                quisquam architecto. Quod, quis at consequatur ratione possimus corporis. Dolor placeat
-                                quidem illum quos quo expedita et error?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ACCORDION ACTIVE -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Active state:</h3>
-                    <div class="accordion">
-                        <button class="accordion__button accordion__button--active">
-                            <h3 class="accordion__title">Return info</h3>
-                            <img class="accordion__arrow accordion__arrow--active"
-                                src="./assets/icons/nav-arrow-down.svg" alt="arrow down">
-                        </button>
-                        <div class="accordion__sect1 accordion__sect1--active">
-                            <p>
-                                <b>Lorem ipsum</b>,
-                                dolor sit amet consectetur adipisicing elit. Est expedita quasi
-                                quibusdamolestiae nulla voluptatibus excepturi voluptates repellendus eius quaerat
-                                laboriosam,
-                                nesciunt laborum eoso expedita et error?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- CHECKBOX COMPONENT -->
             <div class="checkbox-component">
@@ -229,6 +233,28 @@
                 </div>
             </div>
 
+
+            <!-- PROGRESSBAR COMPONENT -->
+            <div class="progressbar-component">
+                <h1 class="component__title">Progressbar component:</h1>
+                <!-- PROGRESS LOADING  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">Loading state:</h3>
+                    <progress class="progressbar"></progress>
+                </div>
+                <!-- PROGRESS 0%  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">0% state:</h3>
+                    <progress class="progressbar" value="0"></progress>
+                </div>
+                <!-- PROGRESS 100%  -->
+                <div class="component__state-container">
+                    <h3 class="component__state-title">100% state:</h3>
+                    <progress class="progressbar" value="100"></progress>
+                </div>
+            </div>
+
+
             <!-- SEARCH COMPONENT -->
             <div class="search-component">
                 <h1 class="component__title">Search component:</h1>
@@ -256,40 +282,28 @@
                 </div>
             </div>
 
-            <!-- ALERT COMPONENT -->
-            <div class="alert-component">
-                <h1 class="component__title">Alert component:</h1>
-                <!-- ALERT SUCCESS: -->
+            <!-- SELECT COMPONENT -->
+            <div class="select-component">
+                <h1 class="component__title">Select component:</h1>
+                <!-- SELECT DEFAULT -->
                 <div class="component__state-container">
-                    <h3 class="component__state-title">Success state:</h3>
-                    <div class="alert alert--success">
-                        <img src="./assets/icons/check-circle.svg" alt="Success icon.">
-                        <p>This is a success message, and it confirms you did something good!</p>
-                    </div>
+                    <h3 class="component__state-title">Default state:</h3>
+                    <select class="select" name="select" id="select">
+                        <option value="select">Option 1</option>
+                        <option value="select">Option 2</option>
+                        <option value="select">Option 3</option>
+                        <option value="select">Option 4</option>
+                    </select>
                 </div>
-                <!-- ALERT INFO: -->
+                <!-- SELECT DISABLED -->
                 <div class="component__state-container">
-                    <h3 class="component__state-title">Info state:</h3>
-                    <div class="alert alert--info">
-                        <img src="./assets/icons/info-circle.svg" alt="Info icon.">
-                        <p>This is a information message, it gives you a message in neutral way.</p>
-                    </div>
-                </div>
-                <!-- ALERT WARNING: -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Warning state:</h3>
-                    <div class="alert alert--warning">
-                        <img src="./assets/icons/warning-triangle.svg" alt="Warning icon.">
-                        <p>This is a warning message. It will get your attention to give you important information.</p>
-                    </div>
-                </div>
-                <!-- ALERT ERROR: -->
-                <div class="component__state-container">
-                    <h3 class="component__state-title">Error state:</h3>
-                    <div class="alert alert--error">
-                        <img src="./assets/icons/xmark-circle.svg" alt="Error icon.">
-                        <p>This is a error message. Something critical is happening or not working.</p>
-                    </div>
+                    <h3 class="component__state-title">Disabled state:</h3>
+                    <select class="select select--disabled" name="select" id="disabled-select" disabled>
+                        <option value="select">Option 1</option>
+                        <option value="select">Option 2</option>
+                        <option value="select">Option 3</option>
+                        <option value="select">Option 4</option>
+                    </select>
                 </div>
             </div>
 
