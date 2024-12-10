@@ -1,22 +1,33 @@
 # Components Viewer
 
-## Project Description
+This project is a student assignment for Høyskolen Kristiania, centered on designing an interface to showcase <b>eight distinct UI components</b> and their various states.
 
-This project is part of an assignment from Høyskolen Kristiania, centered on designing an interface to showcase <b>eight distinct UI components</b> and their various states.
-
-Published website: [https://sbraende-components.netlify.app/](https://sbraende-components.netlify.app/)
-
-## Preview
+**Published website:** [https://sbraende-components.netlify.app/](https://sbraende-components.netlify.app/)
 
 ![Components Viewer Preview](./src/assets/images/screenshot.png)
 
 ## Features
 
-- <b>Vanilla HTML, CSS, and JavaScript.</b>
-- <b>Responsive Design:</b> Optimized for all screen sizes.
 - <b>Component States:</b> Displays each component in multiple states, including default, hover, active, and disabled.
 - <b>Toggle View:</b> Switch between additive and solo rendering modes for flexibility.
-- <b>Minimal and Modern Design.</b>
+- <b>Responsive Design:</b> Optimized for all screen sizes.
+- <b>Vanilla HTML, CSS, and JavaScript.</b> Built without external frameworks for simplicity and performance.
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/sbraende/components-viewer
+```
+
+2. Navigate into the source directory:
+
+```bash
+cd components-viewer/src
+```
+
+3. Open `index.html` in your favorite browser to get started.
 
 ## References:
 
@@ -32,6 +43,9 @@ Published website: [https://sbraende-components.netlify.app/](https://sbraende-c
 - Icons:
 
   [Iconoir](https://iconoir.com/)
+
+- ChatGPT
+  - Used to generate parts of this README.
 
 ## License
 
