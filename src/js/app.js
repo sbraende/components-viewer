@@ -7,9 +7,6 @@ const sidebarAddativeCheckbox = document.querySelector(
   ".sidebar__addativeCheckbox"
 );
 
-// RENDER WEBSITE ELEMENTS
-document.addEventListener("DOMContentLoaded", () => renderElements());
-
 // RENDER ELEMENTS FUNCTION
 const renderElements = () => {
   componentsSelection.forEach((component, index) => {
@@ -55,3 +52,6 @@ const renderElements = () => {
     });
   });
 };
+
+// RENDER WEBSITE ELEMENTS
+document.addEventListener("DOMContentLoaded", () => renderElements());

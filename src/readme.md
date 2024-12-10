@@ -5,10 +5,11 @@
 This project is part of an assignment from Høyskolen Kristiania, centered on designing an interface to showcase <b>eight distinct UI components</b> and their various states.
 
 Published website: [https://sbraende-components.netlify.app/](https://sbraende-components.netlify.app/)
+Github: [https://github.com/sbraende/components-viewer](https://github.com/sbraende/components-viewer)
 
 ## Preview
 
-![Components Viewer Preview](./src/assets/images/screenshot.png)
+![Components Viewer Preview](./assets/images/screenshot.png)
 
 ## Features
 
@@ -32,7 +33,3 @@ Published website: [https://sbraende-components.netlify.app/](https://sbraende-c
 - Icons:
 
   [Iconoir](https://iconoir.com/)
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE). Feel free to use, modify, and distribute this project as per the terms of the license.
